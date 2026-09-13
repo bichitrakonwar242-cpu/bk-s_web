@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My new web</title>
+  <link rel="styleSheet" href="style.css">
+</head>
+<body>
+  
+  <div class="page home">
+    <h1 class="home_text">Click the <b class="bld">Menu </b>button!</h1>
+    <h1 class="bk">BICHITRA KONWAR</h1>
+  </div>
+  
+  <div class="page about">
+    <h1 class="abt_pg">About this Website:</h1>
+    <p class="abt">
+      Hello! This web page was developed by <b>Bichitra Konwar</b> as a personal web development project. This page is created for learning and demonstration purposes. <b>Bichitra</b> is currently learning <b>HTML, CSS, and JavaScript</b>, so there may be some mistakes in the code. He is continuously learning and improving his skills.
+    </p>
+  </div>
+  
+  <div class="page calculate">
+    <h1 class="calc_txt">Calculator</h1>
+    <div class="box">
+      <h1 id="display"></h1>
+      <div>
+        <button class="clc_btn" onclick="calc(7)">7</button>
+        <button class="clc_btn" onclick="calc(8)">8</button>
+        <button class="clc_btn" onclick="calc(9)">9</button>
+        <button class="clc_btn" onclick="calc('*')">×</button>
+      </div>
+      <div>
+        <button class="clc_btn" onclick="calc(4)">4</button>
+        <button class="clc_btn" onclick="calc(5)">5</button>
+        <button class="clc_btn" onclick="calc(6)">6</button>
+        <button class="clc_btn" onclick="calc('+')">+</button>
+      </div>
+      <div>
+        <button class="clc_btn" onclick="calc(1)">1</button>
+        <button class="clc_btn" onclick="calc(2)">2</button>
+        <button class="clc_btn" onclick="calc(3)">3</button>
+        <button class="clc_btn" onclick="calc('-')">-</button>
+      </div>
+      <div>
+        <button class="clc_btn" onclick="calc(0)">0</button>
+        <button class="clc_btn" style="background: #f80; box-shadow: 0 0 10px #f33;" onclick="clr()">C</button>
+        <button class="clc_btn" style="background: #0ee; box-shadow: 0 0 10px #0ff;" onclick="eq()">=</button>
+        <button class="clc_btn" onclick="calc('/')">÷</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="page clr_gnrtr">
+    <h1 class="rndm_txt">Random colour generator</h1>
+    <div id="clr_output"></div>
+    <button id="gnrt_btn">Generate</button>
+  </div>
+  
+  <div class="page draw"></div>
+  
+  <button id="mnu_btn"><b>Menu</b></button>
+  <div class="mnu">
+    <h1 class="mnu_txt">Menu:</h1>
+    <p id="home" class="opsion home-page">Home</p>
+    <p id="about" class="opsion">About</p>
+    <p id="calculator" class="opsion">Calculator</p>
+    <p id="rndm-clr" class="opsion">Random colour</p>
+    <p id="draw" class="opsion">Swipe to Draw line</p>
+  </div>
+  
+  <script src="logic.js"></script>
+</body>
+</html>
